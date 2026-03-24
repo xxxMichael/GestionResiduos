@@ -1,0 +1,86 @@
+.main {
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: 'Inter', system-ui, sans-serif;
+  padding-bottom: 5rem;
+}
+
+.topHeader {
+  background: #0f172a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo { font-weight: 800; color: white; display:flex; align-items:center; gap: 0.5rem; letter-spacing: 0.05em; }
+.btnSecondary { color: #f8fafc; text-decoration: none; font-size: 0.85rem; font-weight: 500; border: 1px solid #334155; padding: 0.5rem 1rem; border-radius: 4px; transition: background 0.15s;}
+.btnSecondary:hover { background: #1e293b; }
+
+.hero {
+  padding: 4rem 1rem 3rem 1rem;
+  text-align: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.badgeTop { 
+  display: inline-block; background: #dcfce7; color: #16a34a; font-size: 0.75rem; 
+  font-weight: 700; text-transform: uppercase; padding: 0.35rem 0.8rem; border-radius: 20px; 
+  margin-bottom: 1.5rem; letter-spacing: 0.05em; 
+}
+
+.hero h1 { font-size: 2.2rem; font-weight: 800; color: #0f172a; margin-bottom: 0.75rem; }
+.hero p { font-size: 1rem; color: #475569; max-width: 650px; margin: 0 auto; line-height: 1.6; }
+
+.container { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
+
+/* Transparency Banner CTA */
+.transparencyBanner {
+  background: #0f172a; border-radius: 12px; padding: 2rem; color: white;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;
+  margin-bottom: 4rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+  background-image: radial-gradient(circle at top right, #1e293b, #0f172a);
+}
+.tbText h2 { font-size: 1.25rem; margin-bottom: 0.5rem; font-weight: 700; }
+.tbText p { font-size: 0.9rem; color: #cbd5e1; max-width: 500px; line-height: 1.5; }
+.btnMap {
+  background: #3b82f6; color: white; border: none; padding: 0.85rem 1.5rem; border-radius: 6px; 
+  font-weight: 600; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; 
+  gap: 0.5rem; text-decoration: none; transition: background 0.15s;
+}
+.btnMap:hover { background: #2563eb; }
+
+.sectionTitle { text-align: center; font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-bottom: 2rem; }
+
+.impactGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem; }
+
+.impactCard {
+  background: #ffffff; border: 1px solid #e2e8f0; padding: 2rem; border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05); text-align: left; transition: transform 0.2s;
+}
+.impactCard:hover { transform: translateY(-3px); box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+
+.impactIconWrap { width: 56px; height: 56px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; }
+.impactCard h3 { font-size: 1.1rem; color: #0f172a; font-weight: 700; margin-bottom: 0.75rem; line-height: 1.4; }
+.impactCard p { font-size: 0.85rem; color: #64748b; line-height: 1.5; margin: 0;}
+
+.progressSection {
+  background: #ffffff; border: 1px solid #e2e8f0; padding: 2rem; border-radius: 12px;
+  margin-bottom: 4rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.progressHeader { display: flex; justify-content: space-between; margin-bottom: 1rem; font-weight: 600; color: #334155; font-size: 1rem; align-items: center;}
+.percText { font-size: 1.25rem; }
+.barTrack { background: #e2e8f0; height: 1.25rem; border-radius: 6px; overflow: hidden; margin-bottom: 1rem;}
+.barFill { background: #16a34a; height: 100%; transition: width 1s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.progressDesc { font-size: 0.85rem; color: #64748b; line-height: 1.5; text-align: center;}
+
+.guideSection h2 { text-align: center; color: #0f172a; font-size: 1.5rem; margin-bottom: 2rem; font-weight: 700; }
+.guideGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.guideCard { background: #ffffff; border: 1px solid #e2e8f0; padding: 1.5rem; border-radius: 8px; border-top: 4px solid #cbd5e1; }
+.guideCard.organic { border-top-color: #16a34a; }
+.guideCard.recyclable { border-top-color: #3b82f6; }
+.guideCard.waste { border-top-color: #475569; }
+.inlineIcon { margin-right: 8px; vertical-align: text-bottom; }
+.guideCard h3 { font-size: 1rem; color: #0f172a; margin-bottom: 1rem; font-weight: 600; }
+.guideCard p { font-size: 0.85rem; color: #64748b; line-height: 1.5; margin: 0;}
